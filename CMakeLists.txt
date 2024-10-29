@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.28)
+project(sniff)
+include_directories(include)
+link_libraries(pcap)
+add_executable(sniff src/main.c src/sniff.c)
